@@ -25,29 +25,44 @@
                     <div id="wrap">You <em>know</em> you want to.</div>
                 </div>
             </section>
-            <form>
+            <form method="get" action="" id="NeededForm">
                 <fieldset>
-                    <legend>let's do this!</legend>
-                    <div class="column">
-                        <div>
-                            <label for="firstName">FIRST NAME</label>
-                            <input type="text" name="firstName" id="firstName"/>
+                    <legend>Let's do this!</legend>
+                    <div class="flex-container">
+                        <div class="column">
+                            
+                                <label for="firstName">FIRST NAME</label>
+                                <input type="text" name="firstName" id="firstName"/>
+                            
+                                <label for="userEmail">EMAIL</label>
+                                <input type="email" name="userEmail" id="userEmail">
+                            
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password">
+
+                                <p id="errorMessage"></p>
+                            
                         </div>
-                        <div>
-                            <label for="userEmail">Email</label>
-                            <input type="email" name="userEmail" id="userEmail">
-                        </div>
-                        <div>
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
+                        <div class="column">
+                            
+                                <label for="lastName">LAST NAME</label>
+                                <input type="text" id="lastName" name="lastName">
+                           
+                                <label for="telNumber">PHONE NUMBER</label>
+                                <input type="tel" name="PhoneNumber" id="telNumber" maxlength="11"/>
+
+                            
+                                <label for="ConfirmPassWord">CONFIRM NUMBER</label>
+                                <input type="password" name="passwordConfirm" id="ConfirmPassWord"/>
+                            
                         </div>
                     </div>
-                    <div class="column">
-                        <label for="lastName">LAST NAME</label>
-                        <input type="text" id="lastName" name="lastName">
-                    </div>
-                </fieldset>
+                </fieldset>               
             </form>
+            <footer>
+                <button type="submit" form="NeededForm">Create Account</button>
+                <p id="formFooter">Already have an account?<a href="..">Log in</a></p>
+            </footer>
         </div>
        </div>
     </body>
