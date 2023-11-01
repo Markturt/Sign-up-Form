@@ -1,6 +1,9 @@
 @font-face {
     font-family: "norse";
-    src: url("Sign-up-Form\fonts\Norse-Bold.otf (1).ttf");
+    src: url("./fonts/norse-bold.otf_1-webfont.woff") format("woff"),
+        url("./fonts/norse-bold.otf_1-webfont.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
 }
 *{
     padding: 0;
@@ -12,6 +15,8 @@
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
+    display: flex;
+    flex: column;
 }
 .side-wrapper{
     background-image: url(./images/photo-1585202900225-6d3ac20a6962.jpeg);
@@ -22,12 +27,12 @@
 }
 .odin-wrapper{
     background-color: rgb(0, 0, 0);
-    opacity: 0.4;
+    opacity: 0.8;
     position: absolute;
     height: 105px;
     width: 100%;
 
-    
+
     top:25vh;
     display: flex;
     justify-content: center;
@@ -39,7 +44,7 @@
     font-size: 75px;
     
 }
-p{
+.side-wrapper>p{
     color: white;
     position: absolute;
     bottom: 5px;
@@ -49,7 +54,25 @@ p{
     display: flex;
     justify-content: center;
 }
-a:link{
+p>a:link{
     color: white;
     margin: 0 2.5px;
+}
+.formHeader{
+   
+    height:39.2vh;
+    width: 65vw;
+    background-color: #E5E7EB;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+.beforeForm{
+    width: 39vw;
+    padding-top: 15vh;
+}
+#wrap{
+    margin-top: 50px;
+}
+fieldset{
+    border: none;
 }
