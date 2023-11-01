@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "norse";
+    src: url("Sign-up-Form\fonts\Norse-Bold.otf (1).ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.side-wrapper{
+    background-image: url(./images/photo-1585202900225-6d3ac20a6962.jpeg);
+    width: 35vw;
+    height: 100vh;
+    position: relative;
+    
+}
+.odin-wrapper{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.4;
+    position: absolute;
+    height: 105px;
+    width: 100%;
+
+    
+    top:25vh;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+#odin{
+    color: white;
+    font-family: "norse",sans-serif;
+    font-size: 75px;
+    
+}
+p{
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+
+    
+    display: flex;
+    justify-content: center;
+}
+a:link{
+    color: white;
+    margin: 0 2.5px;
+}
