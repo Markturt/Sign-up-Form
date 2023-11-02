@@ -57,6 +57,7 @@
 p>a:link,p>a:visited{
     color: white;
     margin: 0 2.5px;
+    text-decoration: none;
 }
 .formHeader{
    
@@ -68,6 +69,7 @@ p>a:link,p>a:visited{
 }
 form{
     height: 30vh;
+    box-shadow: 1px 1px gray;
 }
 .beforeForm{
     width: 39vw;
