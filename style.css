@@ -136,12 +136,12 @@ input[name="password"]{
 }
 button{
     appearance: none;
+    border: none;
     border-radius: 5px;
     background-color: #596D48;
     color: white;
     padding: 5px 20px;
     width: 150px;
-    box-shadow: none;
     margin-bottom: 20px;
 
 
